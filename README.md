@@ -244,9 +244,9 @@ Creato con ❤️ da **DomeniGeco**.
 
 Se PHPBlog ti è utile, puoi:
 
-⭐ lasciare una **stella** al repository
-🐛 segnalare eventuali problemi
-💡 proporre nuove funzionalità
-🔧 contribuire al progetto
+- ⭐ lasciare una **stella** al repository
+- 🐛 segnalare eventuali problemi
+- 💡 proporre nuove funzionalità
+- 🔧 contribuire al progetto
 
 Grazie per aver provato **PHPBlog**! 🌐🦎
