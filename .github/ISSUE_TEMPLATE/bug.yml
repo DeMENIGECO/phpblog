@@ -1,0 +1,94 @@
+name: 🐛 Bug Report
+description: Segnala un problema o un comportamento inatteso in PHPBlog.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver segnalato un bug in PHPBlog! 🦎
+        
+        Prima di aprire l'issue, controlla se il problema è già stato segnalato.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del bug
+      description: Spiega cosa è successo.
+      placeholder: |
+        Quando provo a creare un post, PHPBlog mostra un errore...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Come riprodurre il problema
+      description: Scrivi i passaggi necessari per riprodurre il bug.
+      placeholder: |
+        1. Apri crea-post.php
+        2. Inserisci un titolo
+        3. Inserisci il testo
+        4. Premi "Pubblica post"
+        5. Compare un errore
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento previsto
+      description: Cosa dovrebbe succedere?
+      placeholder: Il post dovrebbe essere salvato in post/posts.json.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento attuale
+      description: Cosa succede invece?
+      placeholder: Il post non viene salvato e PHP mostra un warning.
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Messaggi di errore
+      description: Se ci sono errori, incollali qui.
+      placeholder: |
+        Warning: ...
+        Parse error: ...
+      render: text
+
+  - type: input
+    id: php-version
+    attributes:
+      label: Versione di PHP
+      placeholder: "8.5.8"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Dove stai eseguendo PHPBlog?
+      options:
+        - PHP built-in server
+        - Apache
+        - Nginx
+        - XAMPP
+        - Laragon
+        - Altro
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Screenshot, dettagli o qualsiasi altra informazione utile.
+      placeholder: Aggiungi qui altre informazioni...
