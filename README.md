@@ -26,11 +26,8 @@ Perfetto per piccoli blog personali, progetti scolastici, esperimenti PHP o siti
 
 ## 📸 Anteprima
 
-> Aggiungi qui uno screenshot del tuo blog:
+<img width="1919" height="902" alt="image" src="https://github.com/user-attachments/assets/e0d72fb0-9449-4f8d-93d6-3121dd68eca4" />
 
-```text
-![PHPBlog Screenshot](screenshot.png)
-```
 
 ---
 
