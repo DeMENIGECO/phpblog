@@ -1,0 +1,58 @@
+name: ✨ Feature Request
+description: Proponi una nuova funzionalità per PHPBlog.
+title: "[Feature]: "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per la tua proposta! 🦎
+        
+        Prima di aprire questa issue, controlla se una richiesta simile è già stata proposta.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: Quale funzionalità vorresti?
+      description: Descrivi chiaramente la funzionalità che vorresti aggiungere.
+      placeholder: |
+        Vorrei poter modificare i post già pubblicati...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Perché sarebbe utile?
+      description: Spiega quale problema risolverebbe o cosa migliorerebbe.
+      placeholder: |
+        Sarebbe utile perché permetterebbe di correggere gli errori nei post
+        senza dover modificare direttamente il file JSON.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Come dovrebbe funzionare?
+      description: Se hai già un'idea, descrivi come immagini la funzionalità.
+      placeholder: |
+        Nella pagina del post dovrebbe comparire un pulsante "Modifica".
+        Cliccandolo si dovrebbe aprire un form con il titolo e il testo già compilati.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Hai considerato alternative?
+      description: Descrivi eventuali soluzioni alternative che hai valutato.
+      placeholder: |
+        Un'alternativa sarebbe modificare direttamente posts.json.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Aggiungi screenshot, esempi o altri dettagli utili.
+      placeholder: Aggiungi qui altre informazioni...
