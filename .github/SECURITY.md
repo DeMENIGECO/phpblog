@@ -10,7 +10,7 @@ Se hai trovato una vulnerabilità di sicurezza in PHPBlog, **non aprire una issu
 
 Le vulnerabilità devono essere segnalate **privatamente ai maintainer** tramite GitHub Security Advisories:
 
-**👉 https://github.com/DeMENIGECO/PHPBloh/security/advisories**
+**👉 https://github.com/DeMENIGECO/PHPBlog/security/advisories**
 
 Da questa pagina puoi utilizzare l'opzione **“Report a vulnerability”** per inviare una segnalazione privata.
 
