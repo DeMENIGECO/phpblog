@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #eef1f5;
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PAGINA
+========================= */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 60px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    width: 900px;
+    max-width: 100%;
+
+    background: white;
+
+    padding: 40px;
+
+    border: 1px solid #e2e5e9;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08),
+        0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   TITOLI
+========================= */
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+
+    color: #111827;
+
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+
+/* =========================
+   LINK
+========================= */
+
+a {
+    color: #2563eb;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LINEA
+========================= */
+
+hr {
+    border: 0;
+
+    border-top: 1px solid #e5e7eb;
+
+    margin: 30px 0;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+li {
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+li p {
+    margin-top: 0;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 20px 12px;
+    }
+
+    .card {
+        padding: 25px 20px;
+
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
+/* =========================
+   FORM
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+form label {
+    display: block;
+
+    margin-top: 10px;
+
+    font-weight: 600;
+    color: #374151;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    color: #111827;
+    background: #ffffff;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+form textarea {
+    min-height: 220px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   PULSANTE DEL FORM
+========================= */
+
+form button {
+    width: fit-content;
+
+    margin-top: 10px;
+    padding: 11px 20px;
+
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.1s ease,
+        box-shadow 0.2s ease;
+}
+
+form button:hover {
+    background: #1d4ed8;
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.25);
+}
+
+form button:active {
+    transform: translateY(1px);
+}
+
+
+/* =========================
+   LINK TORNA AL BLOG
+========================= */
+
+.card > a {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #2563eb;
+
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card > a:hover {
+    text-decoration: underline;
+}
+
+.post-title {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.post-content {
+    font-size: 18px;
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.post-content p {
+    margin: 0 0 20px;
+}
+
+@media (max-width: 600px) {
+
+    .post-title {
+        font-size: 28px;
+    }
+
+    .post-content {
+        font-size: 17px;
+    }
+
+}
