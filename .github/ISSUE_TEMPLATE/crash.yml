@@ -1,0 +1,76 @@
+name: 💥 Crash Report
+description: Segnala un crash di PHPBlog.
+title: "[Crash]: "
+labels:
+  - crash
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver segnalato un crash di PHPBlog! 🦎
+        
+        Cerca prima nelle issue esistenti per verificare che il problema non sia già stato segnalato.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Cosa è successo?
+      description: Descrivi brevemente cosa ha causato il crash.
+      placeholder: |
+        PHPBlog va in crash quando provo a pubblicare un post...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Come riprodurre il crash
+      description: Indica i passaggi necessari per riprodurlo.
+      placeholder: |
+        1. Apri crea-post.php
+        2. Inserisci un titolo
+        3. Inserisci il testo
+        4. Premi "Pubblica post"
+        5. PHPBlog va in crash
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Errore mostrato
+      description: Incolla qui l'errore mostrato da PHP o dal server.
+      placeholder: |
+        Fatal error: ...
+        Parse error: ...
+      render: text
+
+  - type: input
+    id: php-version
+    attributes:
+      label: Versione di PHP
+      placeholder: "8.5.8"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente
+      options:
+        - PHP built-in server
+        - Apache
+        - Nginx
+        - XAMPP
+        - Laragon
+        - Altro
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Inserisci screenshot o altri dettagli utili.
+      placeholder: Aggiungi qui altre informazioni...
