@@ -71,7 +71,7 @@ Scarica o clona questo repository sul tuo server che supporta PHP.
 Ad esempio:
 
 ```bash
-git clone https://github.com/DeMENIGECO/PHPBlog.git
+git clone https://github.com/php-blog-org/PHPBlog.git
 ```
 
 Oppure scarica il progetto come ZIP ed estrailo nella cartella del tuo server.
